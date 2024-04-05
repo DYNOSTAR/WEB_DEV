@@ -5,17 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT FORM</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="test.js"></script>
 </head>
 <body>
-    <div class="form">
-    <form method="post">
-            <input type="text" placeholder="Name" id="name" autocomplete="off">
-            <input type="email" placeholder="Email" id="email" autocomplete="off">
-            <input type="text" placeholder="Subject" id="Subject" autocomplete="off">
-            <textarea name="Message" id="message" cols="30" rows="10"></textarea>
-            <button id="btn">Send</button>
-        </form>
+    <div class="body">
     </div>
-    
+    <div class="wrapper">
+    <header>CONTACT US FORM</header>
+        <form onsubmit="event.preventDefault(); validateForm()" method="post">
+                <div class="dbl-field">
+                    <div class="field">
+                        <label for="Name">Enter your name</label>
+                        <input type="text" placeholder="Your Name" id="name" >
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter Your Email" id="email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="dbl-field">
+                    <div class="field">
+                        <label for="phone">Phone no</label>
+                        <input type="tel" placeholder="Enter Your Phone No." id="phone" >
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                </div>
+                <div class="message">
+                    <label for="message">Enter Message</label>
+                    <textarea placeholder="Write your Message"></textarea>
+                    <i class="material-icons"></i>
+                </div>
+                <div class="button-area">
+                    <button type="submit" value="Send">Send Message</button>
+                    
+                </div>        
+            </form>
+    </div>
 </body>
 </html>

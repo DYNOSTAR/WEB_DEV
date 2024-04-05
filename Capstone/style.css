@@ -1,27 +1,113 @@
+*{
+    margin: 0;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    border: black;
+    background: #1b1c1c;
+    
+}
 body {
     display: flex;
+    padding: 0 10px;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: black;
+    background: url(vii.png);
+    
 }
-. form {
-    width: 500px;
-    padding: 6px;
-   
-}
+.body form{
+    background: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-input,
-textarea {
+}
+.wrapper{
+    width: 720px;
+    background: ;
+    border-radius: 5px ;
+
+}
+.wrapper header{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    color: rgb(255, 255, 255);
+}
+form .dbl-field{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.dbl-field .field{
+    height: 50px;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+}
+form .field input,
+form .message textarea {
     width: 100%;
-    padding: 6px;
+    height: 100%;
+    padding: 0 18px;
     outline: none;
-    border: navajowhite;
-    margin: 6px 0px;
+    font-size: 16px;
+    border: 1px solid #32a88b;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    
 }
+form .field input::placeholder,
+form .message textarea::placeholder{
+    color: #f2ec3a;
+    font-style: italic;
 
-#btn {
-    width: 150px;
-    padding: 6px;
+}
+form .field input:focus,
+form .message textarea:focus{
+    border: 2px solid #0D6EFD;
+}
+.wrapper .field i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+form .message {
+    position: relative;
+}
+form .message i{
+    top: 30px;
+    font-size: 20px;
+}
+form .message textarea{
+    min-width: 100px;
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 300px;
+    padding: 15px 20px 0 48px;
+}
+form .button-area{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+.button-area button{
+    font-size: 18px;
+    border: none;
+    color: #fff;
     cursor: pointer;
+    border-radius: 5px;
+    background: #0D6EFD;
+    padding: 13px 25px;
+}
+form .label{
+    color: blue;
+}
+.dbl-field .field label,
+.message label{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
