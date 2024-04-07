@@ -1,0 +1,60 @@
+*{
+    color: #04030d;
+    text-align: center;
+}
+body{
+    color: #282928;
+    background-color:#aaeb28;
+    text-align: center;
+}
+footer{
+    background-color: #eb6228;
+    color:#00000 ;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+button{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+button {
+    color: white;
+    border: solid #2D9CDB;
+    background-color: rgba(17, 185, 252, 0.1);
+    border-radius: 0;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}

@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=hea, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wakadinali</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="store.js" async></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>STORE</li>
-                <li>ABOUT</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
         <hr>
@@ -19,14 +21,38 @@
     <button>Latest Album</button>
     <br>
     <br>
-        <button>play()</button>
+        <button class="btn-play">play()</button>
     </header>
+    <section>
+        <div class="cart-row">
+            <div class="cart-item-column">
+                <span class="cart-item-column">Album 3</span>
+            </div>
+            <span class="cart-item-column">$9.99</span>
+            <div class="cart-quantity cart-column">
+                <input type="number" class="cart-quantity-input" value="2">
+                <button class="btn btn-danger"
+                type="button" >REMOVE</button>
+            </div>
+
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">total</strong>
+            <span class="cart-total-price">$39.97</span>
+        </div>
+        <button class="btn-primary-btn-purchase"
+        type="button">PURCHASE</button>
+    </section>
+    <br>
+    <br>
+    <br>
+    <hr>
     <footer>
         <h3>Wakadinali</h3>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="spotify.com" target="_blank">spotify</a></li>
+            <li><a href="Youtube.com" target="_blank">youtube</a></li>
         </ul>
     </footer>
 </body>
